@@ -1,0 +1,11 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+	<div id="tooplate_main">
+        <h1>SCORE</h1>
+		{% for player in data|sort((a, b) => a.getSCORE() <=> b.getSCORE())|reverse %}
+			<ul>
+					<li> {{player.getNAME_PLAYER()}} {{player.getSCORE()}} puntos</li>
+				</ul>
+		{% endfor %}
+    </div> <!-- end of wrapper -->
+{% endblock %}

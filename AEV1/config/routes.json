@@ -1,0 +1,24 @@
+{
+    "/": {
+        "controller": "ControllerMain",
+        "method": "main"
+    },
+    "/clients": {
+        "controller": "ClientController",
+        "method": "main"
+    },
+    "/employees": {
+        "controller": "ControllerEmployees",
+        "method": "main"
+    },
+
+    "/clientsdetail": {
+        "controller": "ClientController",
+        "method": "detail"
+    },
+
+    "/employeesdetail": {
+        "controller": "ControllerEmployees",
+        "method": "detail"
+    }
+}

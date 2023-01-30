@@ -1,0 +1,9 @@
+{
+    "name": "daw2-dwes/mvc-ap3",
+    "autoload": {
+        "psr-4": {
+            "app\\": "src/"
+        }
+    },
+    "require": {}
+}

@@ -1,0 +1,11 @@
+{
+    "name": "daw2-dwes/mvc-exam",
+    "autoload": {
+        "psr-4": {
+            "app\\" : "src/"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,14 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+	<div id="tooplate_main">
+        <h1>elige un jugador</h1>
+		<form method="post">
+			<select name="PLAYER">
+				{% for player in data %}
+					<option value="{{ player.getID_PLAYER() }}" selected="selected">{{ player.getNAME_PLAYER() }}</option>
+				{% endfor %}
+			</select>
+			<input type="submit" value="Submit" value="getSessionStart">
+		</form>
+    </div> <!-- end of wrapper -->
+{% endblock %}

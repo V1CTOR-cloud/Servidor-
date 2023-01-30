@@ -1,0 +1,33 @@
+{% extends "layout.html.twig" %}
+{% block tableContent %}
+<table>
+	<tr>
+		<td>{{ nombre|upper }}</td>
+		<td>
+			{% for asignatura in modulo %}
+				{{ asignatura }}
+			{% endfor %}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			C/
+			{{direccion.calle}}
+		</td>
+		<td>
+			{{direccion.numero}}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			param:
+			{{clase1.attr1}}
+		</td>
+		<td>
+			param:
+			{{clase1.getAttr1()}}
+		</td>
+	</tr>
+</table>
+{% endblock %}
+
